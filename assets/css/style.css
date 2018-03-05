@@ -5,13 +5,13 @@ html {
 }
 
 body {
-    background-image: url('../images/wallpaper.png');
+    background-image: url('../../images/wallpaper.png');
 }
 
 
 .titlename {
     /* background-color: #ff8c00; */
-    background-image: url('../images/title.png');
+    background-image: url('../../images/title.png');
     font-size: 20px;
     text-align: center;
     margin: 20px auto;
@@ -48,7 +48,7 @@ hr {
 }
 
 .words {
-    background-image: url('../images/secondary.png');
+    background-image: url('../../images/secondary.png');
     font-size: 150px;
     text-align: center;
     margin: 20px auto;
@@ -68,7 +68,7 @@ hr {
 }
 
 .rguess {
-    background-image: url('../images/secondary.png');
+    background-image: url('../../images/secondary.png');
     font-size: 35px;
     text-align: center;
     margin: 20px auto;
@@ -88,7 +88,7 @@ hr {
 }
 
 .wguess {
-    background-image: url('../images/secondary.png');
+    background-image: url('../../images/secondary.png');
     font-size: 35px;
     text-align: center;
     margin: 20px auto;
@@ -133,7 +133,7 @@ hr {
 } */
 
 .guesses {
-    background-image: url('../images/secondary.png');
+    background-image: url('../../images/secondary.png');
     font-size: 30px;
     text-align: center;
     /* margin: 20px auto; */
