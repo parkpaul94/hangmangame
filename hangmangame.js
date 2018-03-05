@@ -61,18 +61,12 @@ document.addEventListener('keypress', (event) => {
         sessionStorage.setItem("winCount", winCount);
         sessionStorage.setItem("loseCount", loseCount);
 
-    function scoreKeep() {
-        JSON.parse(sessionStorage.getItem("winCount"));
-        JSON.parse(sessionStorage.getItem("loseCount"));
-      }
-
 //  If the player guesses the right letters
     if (randomWord.indexOf(keyword) > -1) {
         cletters.push(' ' + keyword);
         dashes[randomWord.indexOf(keyword)] = keyword;
         docdashes[0].innerHTML = dashes.join(' ');
         doccletters[0].innerHTML = cletters;
-
 
         if (dashes.join('') === randomWord) {
             alert('You Win!');
@@ -85,24 +79,10 @@ document.addEventListener('keypress', (event) => {
         guessesLeft--;
         if (guessesLeft == 0) {
             alert('You Lose!');
-            return newGame();
-            
+            return newGame();   
         }
-        
-        
     }
     document.querySelector('.tguess').innerHTML = guessesLeft;
-    // document.querySelector('.twins').innerHTML = winCount;
-    // document.querySelector('.tloss').innerHTML = loseCount;
-
-    
-
 });
 
 docdashes[0].innerHTML = generatedashes().join(' ');
-
-// function newGame() {
-//     var word =['jam', 'car', 'dog', 'game', 'ham', 'water', 'iphone', 'samsung', 'html', 'cola']
-//     var randomWord = word[Math.floor(Math.random()*word.length)];
-// }
-
