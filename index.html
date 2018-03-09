@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
+    <nav class="nav">
+        <div class="headbutton"><span id="blinker">Hangman Game</span></div>
+        <!-- <ul>
+            <li><div class="navbuttons one" id="easy">Easy</li></div>
+            <li><div class="navbuttons two" id="medium">Medium</li></div>
+            <li><div class="navbuttons three" id="hard">Hard</li></div>
+        </ul> -->
+    </nav>
     <div class="container">
-        <header>
-            <div class="titlename">
-                <br>
-                <h1 class="titletext">Hangman Game</h1>
-                <hr size="3" color="black">
-                <h2 class="namefont">Paul Park</h2>
-            </div>
-        </header>
-        
+        <div class="titlename">Hangman Game by Paul Park</div>
         <div class="words"></div>
         <div class="guesscontainer">
             <div class="rguess">
@@ -40,8 +41,7 @@
                 <!-- <div class="loss">
                     <br>Losses<br>
                     <p class="tloss">0</p></div> -->
-            </div>
-        </div>
+         </div>
     </div>
 </body>
         <script src="assets/javascript/game.js"></script>

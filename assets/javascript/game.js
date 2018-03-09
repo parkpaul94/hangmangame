@@ -14,17 +14,12 @@
     var loseCount = 0;
     var guessesLeft = 10;
 //  Choose words Randomnly
-    var lettersInWord = randomWord.split('');
-
-    
-console.log(lettersInWord);
-
+    var lettersInWord = randomWord.split('');    
+    console.log(lettersInWord);
 
 var docdashes = document.getElementsByClassName('words');
 var doccletters = document.getElementsByClassName('rightguesses');
 var docwletters = document.getElementsByClassName('wrongguesses');
-
-
 
     var generatedashes = () => {
         for (var i = 0; i < randomWord.length; i++) {
@@ -33,20 +28,11 @@ var docwletters = document.getElementsByClassName('wrongguesses');
         return dashes;
     }
 
-// var randomWord = document.getElementById('words');
-// randomWord.innerHTML = dashes.join(' ');
-
-
-// function a(){
-//     location.reload(randomWord);
-// }
-
 //  Log players letters
 document.addEventListener('keypress', (event) => {
     var keyword = String.fromCharCode(event.keyCode);
     var key = event.key;
     
-
     if (cletters.indexOf(' ' + key) !== -1) {
         return false;
     }
@@ -58,10 +44,8 @@ document.addEventListener('keypress', (event) => {
         location.reload();
     }
 
-        sessionStorage.setItem("winCount", winCount);
-        sessionStorage.setItem("loseCount", loseCount);
-
 //  If the player guesses the right letters
+
     if (randomWord.indexOf(keyword) > -1) {
         cletters.push(' ' + keyword);
         dashes[randomWord.indexOf(keyword)] = keyword;
@@ -73,6 +57,7 @@ document.addEventListener('keypress', (event) => {
             return newGame();
         }
     }
+    
     else {
         wletters.push(' ' + keyword);
         docwletters[0].innerHTML = wletters;
