@@ -29,7 +29,7 @@ var docwletters = document.getElementsByClassName('wrongguesses');
     }
 
 //  Log players letters
-// document.addEventListener('keypress', (event) => {
+document.addEventListener('keypress', (event) => {
 window.onload = document.addEventListener('keypress', (event));
     var keyword = String.fromCharCode(event.keyCode);
     var key = event.key;
@@ -42,11 +42,11 @@ window.onload = document.addEventListener('keypress', (event));
         return false;
     }
     function newGame() {
-        // location.reload();
-        $('.rightguesses').empty();
-        $('.wrongguesses').empty();
-        $('.tguess').empty();
-        $('.words').empty();
+        location.reload();
+        // $('.rightguesses').empty();
+        // $('.wrongguesses').empty();
+        // $('.tguess').empty();
+        // $('.words').empty();
         // $('.words').generatedashes();
     }
 
@@ -74,6 +74,6 @@ window.onload = document.addEventListener('keypress', (event));
         }
     }
     document.querySelector('.tguess').innerHTML = guessesLeft;
-// });
+});
 
 docdashes[0].innerHTML = generatedashes().join(' ');
